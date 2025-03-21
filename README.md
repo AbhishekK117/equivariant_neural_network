@@ -1,2 +1,2 @@
-# equivariant_neural_network
+# 3D Equivariant Convolutional Neural Network
  
