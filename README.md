@@ -21,3 +21,16 @@ The core script for training and evaluating the equivariant neural network is lo
 To train a model for 20 epochs using data in `plain` subdirectory inside `./../data/` from the beginning (i.e., no checkpoints) and test it on the data present in `plain` subdirectory inside `./../data/test/`, first change directory `cd ./codes/` and use the command  `python3 main_script.py --train_case plain --test_case plain --epochs 20 --run_name experiment1`
 
 Now the model has already trained for 20 epochs. To resume the training from 21<sup>st</sup> epoch for additional 5 epochs, execute the command `python3 main_script.py --train_case plain --test_case plain --epochs 20 --run_name experiment1 --load_model --additional_epochs 5`
+
+### 🔧 Installation
+
+To have the code running, [escnn](https://github.com/QUVA-Lab/escnn) and [lie-deriv](https://github.com/ngruver/lie-deriv?utm_source=catalyzex.com) packages should be installed. Follow the installation process on their respective pages by clicking the links attached. The latest release on [escnn](https://github.com/QUVA-Lab/escnn) can be installed as `pip install escnn` or by cloning the repository by `pip install git+https://github.com/QUVA-Lab/escnn`. 
+Installation of [lie-deriv](https://github.com/ngruver/lie-deriv?utm_source=catalyzex.com) is done as:
+<pre>git clone --recurse-submodules https://github.com/ngruver/lie-deriv.git
+cd lie-deriv
+pip install -r requirements.txt </pre>
+
+### Credits and Acknowledgements
+
+- The credit for 3D steerable equivariant CNN go to author(s) of [escnn](https://github.com/QUVA-Lab/escnn) library.
+- The credit for Lie Derivative based estimation of Equivariance Error go to the author(s) of [lie-deriv](https://github.com/ngruver/lie-deriv?utm_source=catalyzex.com) library
